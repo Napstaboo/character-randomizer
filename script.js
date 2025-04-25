@@ -1,33 +1,34 @@
 const eyesR = [
-"eyeR.png"
+"eyeR/campbell.png",
+"eyeR/eyeR.png"
 ]
 
 const eyesL = [
-"eyeL.png"
+"eyeL/eyeL.png"
 ]
 
 const earsR = [
-"earR.png"
+"earR/earR.png"
 ]
 
 const earsL = [
-"earL.png"
+"earL/earL.png"
 ]
 
 const noses = [
-"nose.png"
+"nose/nose.png"
 ]
 
 const faces = [
-"face.png"
+"faces/face.png"
 ]
 
 const mouths = [
-"mouth.png"
+"mouth/mouth.png"
 ]
 
 const hairs = [
-    "hair.png"
+    "hair/hair.png"
 ]
 
 const randomFace = faces[Math.floor(Math.random() * faces.length)];
@@ -53,7 +54,7 @@ document.getElementById("face").style.transform = "translate(0px, 0px)"
 document.getElementById("earR").style.transform = "translate(-70px, 0px)"
 document.getElementById("earL").style.transform = "translate(70px, 0px)"
 document.getElementById("mouth").style.transform = "translate(0px, 70px)"
-document.getElementById("eyeR").style.transform = "translate(-10px, 0px)"
+document.getElementById("eyeR").style.transform = "translate(-50px, 0px)"
 document.getElementById("eyeL").style.transform = "translate(10px, 0px)"
 document.getElementById("nose").style.transform = "translate(0px, 10px)"
 document.getElementById("hair").style.transform = "translate(0px, -30px)"
