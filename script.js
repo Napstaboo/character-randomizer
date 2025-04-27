@@ -92,6 +92,7 @@ document.getElementById("mouth").src=randomMouth;
 document.getElementById("hair").src = randomHair;
 
 document.getElementById("gender").innerHTML = gender;
+
 document.getElementById("pron").innerHTML = pronoun1 + "/" + pronoun2;
 
 document.getElementById("face").style.transform = "translate(0px, 0px)";
