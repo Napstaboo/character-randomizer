@@ -65,7 +65,7 @@ const pronouns = [
     "ze",
     "hir",
     "fae",
-    "faer"
+    "faer",
 ];
 
 const randomFace = faces[Math.floor(Math.random() * faces.length)];
@@ -77,6 +77,9 @@ const randomNose = noses[Math.floor(Math.random() * noses.length)];
 const randomMouth = mouths[Math.floor(Math.random() * mouths.length)];
 const randomHair = hairs[Math.floor(Math.random() * hairs.length)];
 
+const pronoun1 = pronouns[Math.floor(Math.random() * pronouns.length)];
+const pronoun2 = pronouns[Math.floor(Math.random() * pronouns.length)];
+const gender = genders[Math.floor(Math.random() * genders.length)];
 
 
 document.getElementById("face").src=randomFace;
@@ -88,7 +91,8 @@ document.getElementById("nose").src=randomNose;
 document.getElementById("mouth").src=randomMouth;
 document.getElementById("hair").src = randomHair;
 
-
+document.getElementById("gender").innerHTML = gender;
+document.getElementById("pron").innerHTML = pronoun1 + "/" + pronoun2;
 
 document.getElementById("face").style.transform = "translate(0px, 0px)";
 document.getElementById("earR").style.transform = "translate(-70px, 0px)";
