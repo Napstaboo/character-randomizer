@@ -1,5 +1,5 @@
 .center{
-    margin-top: 0px;
+    margin-top: 200px;
     padding:4px;
     flex: 1;
     display: flex;
@@ -8,7 +8,7 @@
 }
 
 .info{
-    margin-top: 0px;
+    margin-top: 70px;
     padding:4px;
     flex: 1;
     display: flex;
