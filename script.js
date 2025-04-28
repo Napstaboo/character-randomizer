@@ -1,19 +1,22 @@
 const eyesR = [
 "eyeR/campbell.png",
 "eyeR/eyeR.png",
+"eyeR/righteye_nolid.png
 ]
 
 const eyesL = [
-"eyeL/eyeL.png"
-"lefteye_nolid.png"
+"eyeL/eyeL.png",
+"eyeL/lefteye_nolid.png"
 ]
 
 const earsR = [
-"earR/earR.png"
+"earR/earR.png",
+"earR/rightear_real.png"
 ]
 
 const earsL = [
-"earL/earL.png"
+"earL/earL.png",
+"earL/leftear_real.png
 ]
 
 const noses = [
