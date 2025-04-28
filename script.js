@@ -1,10 +1,11 @@
 const eyesR = [
 "eyeR/campbell.png",
-"eyeR/eyeR.png"
+"eyeR/eyeR.png",
 ]
 
 const eyesL = [
 "eyeL/eyeL.png"
+"lefteye_nolid.png"
 ]
 
 const earsR = [
