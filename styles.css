@@ -20,14 +20,15 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 95%;
-    border: solid 2px orange;   
+    width:50%;
+    min-width:300px;
+    min-height:300px;
 }
 
 .info{
     padding:4px;
     text-align: left;
-    width:99%;
+    width:98%;
     background-color: black;
     color: wheat;
     z-index: -1;
@@ -38,14 +39,14 @@ main {
     flex-direction: column;
     gap: 20px;
     width: 100%;
+    min-height: 200px;
 }
 
 .face{
     justify-content: center;
-    height:20%;
-    margin-bottom: 50%;
-    margin-top:20%;
-    margin-left:30%
+    min-height: 100px;
+    height:100%;
+    margin-bottom: 20%;
 }
 
 .name {
