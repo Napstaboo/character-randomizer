@@ -1,12 +1,22 @@
 const eyesR = [
 "eyeR/campbell.png",
 "eyeR/eyeR.png",
-"eyeR/3.png"
+"eyeR/3.png",
+"eyeR/ed-eye-1.png",
+"eyeR/ed-eye-2.png",
+"eyeR/ed-eye-3.png",
+"eyeR/ed-eye-4.png",
+"eyeR/ed-eye-5.png",
 ];
 
 const eyesL = [
 "eyeL/eyeL.png",
 "eyeL/2.png",
+"eyeL/ed-eye-1.png",
+"eyeL/ed-eye-2.png",
+"eyeL/ed-eye-3.png",
+"eyeL/ed-eye-4.png",
+"eyeL/ed-eye-5.png",
 ];
 
 const earsR = [
@@ -33,7 +43,13 @@ const faces = [
 const mouths = [
 "mouth/mouth.png",
 "mouth/1.png",
-"mouth/Screenshot 2025-04-26 185253.png"
+"mouth/Screenshot 2025-04-26 185253.png",
+"mouth/ed-mouth-2.png",
+"mouth/ed-mouth-3.png",
+"mouth/ed-mouth-4.png",
+"mouth/ed-mouth-5.png",
+"mouth/ed-mouth-6.png",
+"mouth/ed-mouth-7.png"
 ]
 ;
 const hairs = [
