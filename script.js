@@ -84,39 +84,67 @@ const pronouns = [
     "faer",
 ];
 
-const randomFace = faces[Math.floor(Math.random() * faces.length)];
-const randomEarR = earsR[Math.floor(Math.random() * earsR.length)];
-const randomEarL = earsL[Math.floor(Math.random() * earsL.length)];
-const randomEyeL = eyesL[Math.floor(Math.random() * eyesL.length)];
-const randomEyeR = eyesR[Math.floor(Math.random() * eyesR.length)];
-const randomNose = noses[Math.floor(Math.random() * noses.length)];
-const randomMouth = mouths[Math.floor(Math.random() * mouths.length)];
-const randomHair = hairs[Math.floor(Math.random() * hairs.length)];
+const randomFace = randomChoice(faces);
+const randomEarR = randomChoice(earsR);
+const randomEarL = randomChoice(earsL);
+const randomEyeL = randomChoice(eyesL);
+const randomEyeR = randomChoice(eyesR);
+const randomNose = randomChoice(noses);
+const randomMouth = randomChoice(mouths);
+const randomHair = randomChoice(hairs);
 
 const pronoun1 = pronouns[Math.floor(Math.random() * pronouns.length)];
 const pronoun2 = pronouns[Math.floor(Math.random() * pronouns.length)];
 const gender = genders[Math.floor(Math.random() * genders.length)];
 
 
-document.getElementById("face").src=randomFace;
-document.getElementById("earR").src=randomEarR;
-document.getElementById("earL").src=randomEarL;
-document.getElementById("eyeL").src=randomEyeL;
-document.getElementById("eyeR").src=randomEyeR;
-document.getElementById("nose").src=randomNose;
-document.getElementById("mouth").src=randomMouth;
-document.getElementById("hair").src = randomHair;
+function randomChoice(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+  
+  function generateSyllable() {
+    const consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "r", "s", "t", "v", "z", "ng"];
+    const vowels = ["a", "e", "i", "o", "u", "y", "ae", "io", "ou"];
+    return randomChoice(consonants) + randomChoice(vowels);
+  }
+  
+  function randomName(syllablesCount) {
+    let name = "";
+    for (let i = 0; i < syllablesCount; i++) {
+      name += generateSyllable();
+    }
+    return name.charAt(0).toUpperCase() + name.slice(1); // Capitalize
+  }
+  
+  window.onload = function() {
+    const firstName = randomName(2, 3); // 2-3 syllables
+    const lastName = randomName(2, 4); // 2-4 syllables
+    const fullName = firstName + " " + lastName;
+    document.getElementById('profile-name').textContent = fullName;
 
-document.getElementById("gender").innerHTML = gender;
+    document.getElementById("face").src=randomFace;
+    document.getElementById("earR").src=randomEarR;
+    document.getElementById("earL").src=randomEarL;
+    document.getElementById("eyeL").src=randomEyeL;
+    document.getElementById("eyeR").src=randomEyeR;
+    document.getElementById("nose").src=randomNose;
+    document.getElementById("mouth").src=randomMouth;
+    document.getElementById("hair").src = randomHair;
 
-document.getElementById("pron").innerHTML = pronoun1 + "/" + pronoun2;
+    document.getElementById("gender").innerHTML = "GENDER: " + gender;
+    document.getElementById("pron").innerHTML = "PRONOUNS: " + pronoun1 + "/" + pronoun2;
 
-document.getElementById("face").style.transform = "translate(0px, 0px)";
-document.getElementById("earR").style.transform = "translate(-70px, 0px)";
-document.getElementById("earL").style.transform = "translate(70px, 0px)";
-document.getElementById("mouth").style.transform = "translate(0px, 70px)";
-document.getElementById("eyeR").style.transform = "translate(-50px, 0px)";
-document.getElementById("eyeL").style.transform = "translate(10px, 0px)";
-document.getElementById("nose").style.transform = "translate(0px, 10px)";
-document.getElementById("hair").style.transform = "translate(0px, -30px)";
-document.getElementById("hair").style.transform += "scale(1.2, 1.2)";
+    document.getElementById("face").style.transform = "translate(0px, 0px)";
+    document.getElementById("earR").style.transform = "translate(-70px, 0px)";
+    document.getElementById("earL").style.transform = "translate(70px, 0px)";
+    document.getElementById("mouth").style.transform = "translate(0px, 70px)";
+    document.getElementById("eyeR").style.transform = "translate(-50px, 0px)";
+    document.getElementById("eyeL").style.transform = "translate(10px, 0px)";
+    document.getElementById("nose").style.transform = "translate(0px, 10px)";
+    document.getElementById("hair").style.transform = "translate(0px, -30px)";
+    document.getElementById("hair").style.transform += "scale(1.2, 1.2)";
+  }
+
+
+
+

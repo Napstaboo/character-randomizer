@@ -1,18 +1,54 @@
 .center{
-    margin-top: 200px;
-    padding:4px;
+    padding:20px;
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;  
+    max-width: 30%;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    height:fit-content;
+    flex-wrap: wrap;
+  }
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    border: solid 2px orange;   
 }
 
 .info{
-    margin-top: 70px;
     padding:4px;
-    flex: 1;
-    display: flex;
+    text-align: left;
+    width:99%;
+    background-color: black;
+    color: wheat;
+    z-index: -1;
+}
+
+.face{
+    padding:100px;
     justify-content: center;
-    align-items: center;   
-    
+    height:20%;
+    margin-bottom: 30%;
+    margin-left:20%
+}
+
+.name {
+    background-color: aliceblue;
+    color:black;
+    font-size: larger;
+    padding: 8px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
