@@ -143,6 +143,7 @@ function randomChoice(arr) {
     document.getElementById("nose").style.transform = "translate(0px, 10px)";
     document.getElementById("hair").style.transform = "translate(0px, -30px)";
     document.getElementById("hair").style.transform += "scale(1.2, 1.2)";
+
   }
 
 
