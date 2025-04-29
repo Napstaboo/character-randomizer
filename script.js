@@ -65,6 +65,8 @@ const genders = [
     "girl",
     "boy",
     "boygirl",
+    "nonbinary",
+    "non-Euclidean",
     "potato",
     "entity",
     "redacted",
