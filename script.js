@@ -21,10 +21,16 @@ const eyesL = [
 
 const earsR = [
 "earR/earR.png",
+"earR/ed-ear-1.png",
+"earR/ed-ear-2.png",
+"earR/ed-ear-3.png",
 ];
 
 const earsL = [
-"earL/earL.png"
+"earL/earL.png",
+"earL/ed-ear-1.png",
+"earL/ed-ear-3.png",
+"earL/ed-ear-2.png",
 ];
 
 const noses = [
@@ -54,7 +60,11 @@ const mouths = [
 ;
 const hairs = [
     "hair/hair.png",
-    "hair/2.png"
+    "hair/2.png",
+    "hair/ed-hair-1.png",
+    "hair/ed-hair-2.png",
+    "hair/ed-hair-3.png",
+    "hair/ed-hair-4.png"
 ];
 
 const genders = [
