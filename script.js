@@ -107,7 +107,7 @@ function randomChoice(arr) {
   }
   
   function generateSyllable() {
-    const consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "r", "s", "t", "v", "z", "ng"];
+    const consonants = ["b", "sh", "ch", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "r", "s", "t", "v", "z", "ng"];
     const vowels = ["a", "e", "i", "o", "u", "y", "ae", "io", "ou"];
     return randomChoice(consonants) + randomChoice(vowels);
   }
