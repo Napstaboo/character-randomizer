@@ -7,6 +7,7 @@ const eyesR = [
 "eyeR/ed-eye-3.png",
 "eyeR/ed-eye-4.png",
 "eyeR/ed-eye-5.png",
+"eyeR/lefteye_nolid.png",
 ];
 
 const eyesL = [
@@ -17,14 +18,17 @@ const eyesL = [
 "eyeL/ed-eye-3.png",
 "eyeL/ed-eye-4.png",
 "eyeL/ed-eye-5.png",
+"eyeL/righteye_nolid.png",
 ];
 
 const earsR = [
 "earR/earR.png",
+"earR/rightear_real.png",
 ];
 
 const earsL = [
-"earL/earL.png"
+"earL/earL.png",
+"earL/leftear_real.png",
 ];
 
 const noses = [
