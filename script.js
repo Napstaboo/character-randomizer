@@ -7,6 +7,7 @@ const eyesR = [
 "eyeR/ed-eye-3.png",
 "eyeR/ed-eye-4.png",
 "eyeR/ed-eye-5.png",
+"eyeR/lefteye_nolid.png",
 ];
 
 const eyesL = [
@@ -17,6 +18,7 @@ const eyesL = [
 "eyeL/ed-eye-3.png",
 "eyeL/ed-eye-4.png",
 "eyeL/ed-eye-5.png",
+"eyeL/righteye_nolid.png",
 ];
 
 const earsR = [
@@ -24,6 +26,7 @@ const earsR = [
 "earR/ed-ear-1.png",
 "earR/ed-ear-2.png",
 "earR/ed-ear-3.png",
+"earR/rightear_real.png",
 ];
 
 const earsL = [
@@ -31,6 +34,7 @@ const earsL = [
 "earL/ed-ear-1.png",
 "earL/ed-ear-3.png",
 "earL/ed-ear-2.png",
+"earL/leftear_real.png",
 ];
 
 const noses = [
@@ -71,6 +75,8 @@ const genders = [
     "girl",
     "boy",
     "boygirl",
+    "nonbinary",
+    "non-Euclidean",
     "potato",
     "entity",
     "redacted",
@@ -113,7 +119,7 @@ function randomChoice(arr) {
   }
   
   function generateSyllable() {
-    const consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "r", "s", "t", "v", "z", "ng"];
+    const consonants = ["b", "sh", "ch", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "r", "s", "t", "v", "z", "ng"];
     const vowels = ["a", "e", "i", "o", "u", "y", "ae", "io", "ou"];
     return randomChoice(consonants) + randomChoice(vowels);
   }
